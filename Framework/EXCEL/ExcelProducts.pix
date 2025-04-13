@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
   <CompilationType>CSharp</CompilationType>
-  <Description>Новый скрипт без наполнения.</Description>
-  <Id>58556f30-c55b-4bba-88f7-dc5894472060</Id>
+  <Description>Trabajar con tablas - crear una nueva tabla, en la que se añaden columnas de forma estándar y filas de diferentes maneras, incluyendo formas alternativas. El resultado se mostrará en la ventana de mensajes.</Description>
+  <Id>adff220c-6f03-4089-ae90-4f9667fd44c7</Id>
   <Logic z:Id="i2" i:type="ExecutedStep">
     <Childs>
       <AbstractStep z:Id="i3" i:type="ExecutedStep">
         <Childs />
-        <Id>76534985-ba38-41d3-ac0d-82e1b57db8e2</Id>
+        <Id>c181b52f-cb51-4723-84b8-2c7963f52bb0</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
           <PropertyValue z:Id="i4">
-            <PropertyName>Text</PropertyName>
+            <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>"Empieza a activar las aplicaciones."</_expression>
+            <_expression>totalProductos</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -24,18 +24,26 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text>Escribe el log "Empezando a activar aplicaciones".</Text>
-        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i5" i:type="ExecutedStep">
         <Childs />
-        <Id>51e22f90-fda4-40a3-922b-7a3d35021835</Id>
+        <Id>06417b25-427f-4519-8730-f459bfc9292d</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
           <PropertyValue z:Id="i6">
-            <PropertyName>Text</PropertyName>
+            <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>"Fin de la activación de aplicaciones."</_expression>
+            <_expression>ProductsTable.Rows.</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i7">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>totalProductos</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -46,11 +54,11 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text>Escriba el log "Fin del encendido de la aplicación".</Text>
-        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
     </Childs>
-    <Id>fa747f78-b3aa-489b-8b0a-dbe7952530bd</Id>
+    <Id>e6ef645b-840f-4b22-9e38-b604a8bd54ba</Id>
     <Parent i:nil="true" />
     <PropertyValues />
     <SelectedOptionId i:nil="true" />
@@ -58,18 +66,32 @@
     <EnableStatus>true</EnableStatus>
     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
     <RetryCount>-1</RetryCount>
-    <Text></Text>
+    <Text i:nil="true" />
     <_activityFullName>BR.Core.Base.Container</_activityFullName>
   </Logic>
-  <Name>InitApplications.pix</Name>
+  <Name>ExcelProducts.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i7">
+    <Parameter z:Id="i8">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>Config</Name>
+      <Name>TransactionItem</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+    <Parameter z:Id="i9">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>ProductsTable</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Data.DataTable</TypeString>
+    </Parameter>
+    <Parameter z:Id="i10">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>TransactionData</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Text.Json.JsonElement</TypeString>
     </Parameter>
   </Params>
   <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">

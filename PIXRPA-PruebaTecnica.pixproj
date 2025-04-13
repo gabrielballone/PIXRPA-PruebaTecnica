@@ -45,7 +45,15 @@
     </ProjectFileItem>
     <ProjectFileItem z:Id="i12">
       <IsMain>false</IsMain>
-      <Path>GetData.pix</Path>
+      <Path>Framework\API\GetData.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i13">
+      <IsMain>false</IsMain>
+      <Path>Framework\DB\DB_Actions.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i14">
+      <IsMain>false</IsMain>
+      <Path>Framework\EXCEL\ExcelProducts.pix</Path>
     </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
