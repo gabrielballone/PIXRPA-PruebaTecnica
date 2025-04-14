@@ -1379,10 +1379,83 @@
                           </AbstractStep>
                           <AbstractStep z:Id="i142" i:type="ExecutedStep">
                             <Childs />
-                            <Id>a1093b8e-aab7-4df6-a340-f8102e0449f8</Id>
+                            <Id>903c8a74-abb6-435a-9b0d-c65e3773ff44</Id>
                             <Parent z:Ref="i137" />
                             <PropertyValues>
                               <PropertyValue z:Id="i143">
+                                <PropertyName>FilePath</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>String.Format(Config["ReportPath"].ToString(),nowDate)</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i144">
+                                <PropertyName>FileInfo</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>fileInfo</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId>0</SelectedOptionId>
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>Activities.Files.GetInfo</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i145" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>bbc9405b-1045-4d68-95e5-17d0cf2294a0</Id>
+                            <Parent z:Ref="i137" />
+                            <PropertyValues />
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i146" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>cc5f910e-3c15-4f49-8652-fed8cd1e506d</Id>
+                            <Parent z:Ref="i137" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i147">
+                                <PropertyName>Value</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>new List&lt;System.Data.DataTable&gt;()</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i148">
+                                <PropertyName>To</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>DataCalculations</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i149" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>a1093b8e-aab7-4df6-a340-f8102e0449f8</Id>
+                            <Parent z:Ref="i137" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i150">
                                 <PropertyName>FilePath</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>@"Framework\DB\DB_Actions.pix"</_expression>
@@ -1390,16 +1463,108 @@
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i144">
+                              <PropertyValue z:Id="i151">
                                 <PropertyName>Parameters</PropertyName>
                                 <_dataType>Value</_dataType>
                                 <_expression i:nil="true" />
                                 <_screenShotBase64 i:nil="true" />
                                 <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d17p1:ArrayOfArgumentItem">
-                                  <d17p1:ArgumentItem z:Id="i145">
+                                  <d17p1:ArgumentItem z:Id="i152">
                                     <d17p1:ArgumentName>DB_Conn</d17p1:ArgumentName>
                                     <d17p1:Expression>DB_Conn</d17p1:Expression>
                                     <d17p1:Type>Activities.DataBaseSQL.Core.DataBaseShareMethodConnection</d17p1:Type>
+                                  </d17p1:ArgumentItem>
+                                  <d17p1:ArgumentItem z:Id="i153">
+                                    <d17p1:ArgumentName>DataCalculations</d17p1:ArgumentName>
+                                    <d17p1:Expression>DataCalculations</d17p1:Expression>
+                                    <d17p1:Type>List&lt;System.Data.DataTable&gt;</d17p1:Type>
+                                  </d17p1:ArgumentItem>
+                                </_value>
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i154" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>cc5fb651-3991-48c5-b000-7df662186b2c</Id>
+                            <Parent z:Ref="i137" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i155">
+                                <PropertyName>FilePath</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>@"Framework\EXCEL\ExcelResume.pix"</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i156">
+                                <PropertyName>Parameters</PropertyName>
+                                <_dataType>Value</_dataType>
+                                <_expression i:nil="true" />
+                                <_screenShotBase64 i:nil="true" />
+                                <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d17p1:ArrayOfArgumentItem">
+                                  <d17p1:ArgumentItem z:Id="i157">
+                                    <d17p1:ArgumentName>DataCalculations</d17p1:ArgumentName>
+                                    <d17p1:Expression>DataCalculations</d17p1:Expression>
+                                    <d17p1:Type>List&lt;System.Data.DataTable&gt;</d17p1:Type>
+                                  </d17p1:ArgumentItem>
+                                  <d17p1:ArgumentItem z:Id="i158">
+                                    <d17p1:ArgumentName>ReportPath</d17p1:ArgumentName>
+                                    <d17p1:Expression>Config["ReportPath"].ToString()</d17p1:Expression>
+                                    <d17p1:Type>System.String</d17p1:Type>
+                                  </d17p1:ArgumentItem>
+                                  <d17p1:ArgumentItem z:Id="i159">
+                                    <d17p1:ArgumentName>nowDate</d17p1:ArgumentName>
+                                    <d17p1:Expression>nowDate</d17p1:Expression>
+                                    <d17p1:Type>System.String</d17p1:Type>
+                                  </d17p1:ArgumentItem>
+                                </_value>
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i160" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>c7e956ab-d128-46a9-814b-b8040dfa99a2</Id>
+                            <Parent z:Ref="i137" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i161">
+                                <PropertyName>FilePath</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>@"Framework\WEB\FormUpload.pix"</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i162">
+                                <PropertyName>Parameters</PropertyName>
+                                <_dataType>Value</_dataType>
+                                <_expression i:nil="true" />
+                                <_screenShotBase64 i:nil="true" />
+                                <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d17p1:ArrayOfArgumentItem">
+                                  <d17p1:ArgumentItem z:Id="i163">
+                                    <d17p1:ArgumentName>Config</d17p1:ArgumentName>
+                                    <d17p1:Expression>Config</d17p1:Expression>
+                                    <d17p1:Type>Dictionary&lt;System.String, System.Object&gt;</d17p1:Type>
+                                  </d17p1:ArgumentItem>
+                                  <d17p1:ArgumentItem z:Id="i164">
+                                    <d17p1:ArgumentName>filePath</d17p1:ArgumentName>
+                                    <d17p1:Expression>fileInfo.Fullname</d17p1:Expression>
+                                    <d17p1:Type>System.String</d17p1:Type>
                                   </d17p1:ArgumentItem>
                                 </_value>
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -1425,7 +1590,7 @@
                         <Text></Text>
                         <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i146" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i165" i:type="ExecutedStep">
                         <Childs />
                         <Id>c476fa31-bce9-472f-a994-b196028d3cbe</Id>
                         <Parent z:Ref="i136" />
@@ -1442,7 +1607,7 @@
                     <Id>73fbda1b-086f-45e9-a34c-dcffc0731957</Id>
                     <Parent z:Ref="i128" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i147">
+                      <PropertyValue z:Id="i166">
                         <PropertyName>Condition</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>TransactionNumber == TransactionData.GetArrayLength()</_expression>
@@ -1459,12 +1624,12 @@
                     <Text></Text>
                     <_activityFullName>BR.Core.Base.If</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i148" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i167" i:type="ExecutedStep">
                     <Childs />
                     <Id>21d18971-83f8-4a55-8217-3567bad249e8</Id>
                     <Parent z:Ref="i128" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i149">
+                      <PropertyValue z:Id="i168">
                         <PropertyName>FilePath</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>@"Framework\SetTransactionStatus.pix"</_expression>
@@ -1472,38 +1637,38 @@
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i150">
+                      <PropertyValue z:Id="i169">
                         <PropertyName>Parameters</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
                         <_screenShotBase64 i:nil="true" />
                         <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
-                          <d13p1:ArgumentItem z:Id="i151">
+                          <d13p1:ArgumentItem z:Id="i170">
                             <d13p1:ArgumentName>SystemException</d13p1:ArgumentName>
                             <d13p1:Expression>SystemException</d13p1:Expression>
                             <d13p1:Type>System.Exception</d13p1:Type>
                           </d13p1:ArgumentItem>
-                          <d13p1:ArgumentItem z:Id="i152">
+                          <d13p1:ArgumentItem z:Id="i171">
                             <d13p1:ArgumentName>TransactionNumber</d13p1:ArgumentName>
                             <d13p1:Expression>TransactionNumber</d13p1:Expression>
                             <d13p1:Type>System.Int32</d13p1:Type>
                           </d13p1:ArgumentItem>
-                          <d13p1:ArgumentItem z:Id="i153">
+                          <d13p1:ArgumentItem z:Id="i172">
                             <d13p1:ArgumentName>RetryNumber</d13p1:ArgumentName>
                             <d13p1:Expression>RetryNumber</d13p1:Expression>
                             <d13p1:Type>System.Int32</d13p1:Type>
                           </d13p1:ArgumentItem>
-                          <d13p1:ArgumentItem z:Id="i154">
+                          <d13p1:ArgumentItem z:Id="i173">
                             <d13p1:ArgumentName>Config</d13p1:ArgumentName>
                             <d13p1:Expression>Config</d13p1:Expression>
                             <d13p1:Type>Dictionary&lt;System.String, System.Object&gt;</d13p1:Type>
                           </d13p1:ArgumentItem>
-                          <d13p1:ArgumentItem z:Id="i155">
+                          <d13p1:ArgumentItem z:Id="i174">
                             <d13p1:ArgumentName>TransactionItem</d13p1:ArgumentName>
                             <d13p1:Expression>TransactionItem</d13p1:Expression>
                             <d13p1:Type>Dictionary&lt;System.String, System.Object&gt;</d13p1:Type>
                           </d13p1:ArgumentItem>
-                          <d13p1:ArgumentItem z:Id="i156">
+                          <d13p1:ArgumentItem z:Id="i175">
                             <d13p1:ArgumentName>BusinessException</d13p1:ArgumentName>
                             <d13p1:Expression>BusinessException</d13p1:Expression>
                             <d13p1:Type>PIX.Core.Exceptions.BusinessRuleException</d13p1:Type>
@@ -1520,12 +1685,12 @@
                     <Text>Ejecutar el script SetTransactionStatus</Text>
                     <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i157" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i176" i:type="ExecutedStep">
                     <Childs />
                     <Id>f5770265-b271-47d3-bf3b-dcb0a6c12c20</Id>
                     <Parent z:Ref="i128" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i158">
+                      <PropertyValue z:Id="i177">
                         <PropertyName>GUID</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
@@ -1554,18 +1719,18 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Try</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i159" i:type="ExecutedStep">
+              <AbstractStep z:Id="i178" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i160" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i179" i:type="ExecutedStep">
                     <Childs>
-                      <AbstractStep z:Id="i161" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i180" i:type="ExecutedStep">
                         <Childs>
-                          <AbstractStep z:Id="i162" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i181" i:type="ExecutedStep">
                             <Childs />
                             <Id>cf25c378-7f46-4e70-93ab-c802b4cbfd47</Id>
-                            <Parent z:Ref="i161" />
+                            <Parent z:Ref="i180" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i163">
+                              <PropertyValue z:Id="i182">
                                 <PropertyName>Value</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>exception</_expression>
@@ -1573,7 +1738,7 @@
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i164">
+                              <PropertyValue z:Id="i183">
                                 <PropertyName>To</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>BusinessException</_expression>
@@ -1590,12 +1755,12 @@
                             <Text>Asignación Error de negocio.</Text>
                             <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                           </AbstractStep>
-                          <AbstractStep z:Id="i165" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i184" i:type="ExecutedStep">
                             <Childs />
                             <Id>92011368-a7a3-4646-9de4-5bba125ed7b8</Id>
-                            <Parent z:Ref="i161" />
+                            <Parent z:Ref="i180" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i166">
+                              <PropertyValue z:Id="i185">
                                 <PropertyName>FilePath</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>@"Framework\SetTransactionStatus.pix"</_expression>
@@ -1603,38 +1768,38 @@
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i167">
+                              <PropertyValue z:Id="i186">
                                 <PropertyName>Parameters</PropertyName>
                                 <_dataType>Value</_dataType>
                                 <_expression i:nil="true" />
                                 <_screenShotBase64 i:nil="true" />
                                 <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d17p1:ArrayOfArgumentItem">
-                                  <d17p1:ArgumentItem z:Id="i168">
+                                  <d17p1:ArgumentItem z:Id="i187">
                                     <d17p1:ArgumentName>SystemException</d17p1:ArgumentName>
                                     <d17p1:Expression>SystemException</d17p1:Expression>
                                     <d17p1:Type>System.Exception</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i169">
+                                  <d17p1:ArgumentItem z:Id="i188">
                                     <d17p1:ArgumentName>TransactionNumber</d17p1:ArgumentName>
                                     <d17p1:Expression>TransactionNumber</d17p1:Expression>
                                     <d17p1:Type>System.Int32</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i170">
+                                  <d17p1:ArgumentItem z:Id="i189">
                                     <d17p1:ArgumentName>RetryNumber</d17p1:ArgumentName>
                                     <d17p1:Expression>RetryNumber</d17p1:Expression>
                                     <d17p1:Type>System.Int32</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i171">
+                                  <d17p1:ArgumentItem z:Id="i190">
                                     <d17p1:ArgumentName>Config</d17p1:ArgumentName>
                                     <d17p1:Expression>Config</d17p1:Expression>
                                     <d17p1:Type>Dictionary&lt;System.String, System.Object&gt;</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i172">
+                                  <d17p1:ArgumentItem z:Id="i191">
                                     <d17p1:ArgumentName>TransactionItem</d17p1:ArgumentName>
                                     <d17p1:Expression>TransactionItem</d17p1:Expression>
                                     <d17p1:Type>Dictionary&lt;System.String, System.Object&gt;</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i173">
+                                  <d17p1:ArgumentItem z:Id="i192">
                                     <d17p1:ArgumentName>BusinessException</d17p1:ArgumentName>
                                     <d17p1:Expression>(PIX.Core.Exceptions.BusinessRuleException)BusinessException</d17p1:Expression>
                                     <d17p1:Type>PIX.Core.Exceptions.BusinessRuleException</d17p1:Type>
@@ -1651,12 +1816,12 @@
                             <Text>Ejecutar el script SetTransactionStatus</Text>
                             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                           </AbstractStep>
-                          <AbstractStep z:Id="i174" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i193" i:type="ExecutedStep">
                             <Childs />
                             <Id>bf982794-72e2-4bc1-8d33-06c2f4f517c8</Id>
-                            <Parent z:Ref="i161" />
+                            <Parent z:Ref="i180" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i175">
+                              <PropertyValue z:Id="i194">
                                 <PropertyName>GUID</PropertyName>
                                 <_dataType>Value</_dataType>
                                 <_expression i:nil="true" />
@@ -1675,7 +1840,7 @@
                           </AbstractStep>
                         </Childs>
                         <Id>abc2a5e0-0d2f-40b1-ae6c-39bb7ebc36e8</Id>
-                        <Parent z:Ref="i160" />
+                        <Parent z:Ref="i179" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
@@ -1685,14 +1850,14 @@
                         <Text></Text>
                         <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i176" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i195" i:type="ExecutedStep">
                         <Childs>
-                          <AbstractStep z:Id="i177" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i196" i:type="ExecutedStep">
                             <Childs />
                             <Id>1779cf57-eac4-4964-a979-82c378a8c498</Id>
-                            <Parent z:Ref="i176" />
+                            <Parent z:Ref="i195" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i178">
+                              <PropertyValue z:Id="i197">
                                 <PropertyName>Value</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>exception</_expression>
@@ -1700,7 +1865,7 @@
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i179">
+                              <PropertyValue z:Id="i198">
                                 <PropertyName>To</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>SystemException</_expression>
@@ -1717,12 +1882,12 @@
                             <Text></Text>
                             <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                           </AbstractStep>
-                          <AbstractStep z:Id="i180" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i199" i:type="ExecutedStep">
                             <Childs />
                             <Id>b2aab5bf-cdff-4758-89dd-42c5228b1eb5</Id>
-                            <Parent z:Ref="i176" />
+                            <Parent z:Ref="i195" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i181">
+                              <PropertyValue z:Id="i200">
                                 <PropertyName>FilePath</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>@"Framework\SetTransactionStatus.pix"</_expression>
@@ -1730,38 +1895,38 @@
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i182">
+                              <PropertyValue z:Id="i201">
                                 <PropertyName>Parameters</PropertyName>
                                 <_dataType>Value</_dataType>
                                 <_expression i:nil="true" />
                                 <_screenShotBase64 i:nil="true" />
                                 <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d17p1:ArrayOfArgumentItem">
-                                  <d17p1:ArgumentItem z:Id="i183">
+                                  <d17p1:ArgumentItem z:Id="i202">
                                     <d17p1:ArgumentName>SystemException</d17p1:ArgumentName>
                                     <d17p1:Expression>SystemException</d17p1:Expression>
                                     <d17p1:Type>System.Exception</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i184">
+                                  <d17p1:ArgumentItem z:Id="i203">
                                     <d17p1:ArgumentName>TransactionNumber</d17p1:ArgumentName>
                                     <d17p1:Expression>TransactionNumber</d17p1:Expression>
                                     <d17p1:Type>System.Int32</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i185">
+                                  <d17p1:ArgumentItem z:Id="i204">
                                     <d17p1:ArgumentName>RetryNumber</d17p1:ArgumentName>
                                     <d17p1:Expression>RetryNumber</d17p1:Expression>
                                     <d17p1:Type>System.Int32</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i186">
+                                  <d17p1:ArgumentItem z:Id="i205">
                                     <d17p1:ArgumentName>Config</d17p1:ArgumentName>
                                     <d17p1:Expression>Config</d17p1:Expression>
                                     <d17p1:Type>Dictionary&lt;System.String, System.Object&gt;</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i187">
+                                  <d17p1:ArgumentItem z:Id="i206">
                                     <d17p1:ArgumentName>TransactionItem</d17p1:ArgumentName>
                                     <d17p1:Expression>TransactionItem</d17p1:Expression>
                                     <d17p1:Type>Dictionary&lt;System.String, System.Object&gt;</d17p1:Type>
                                   </d17p1:ArgumentItem>
-                                  <d17p1:ArgumentItem z:Id="i188">
+                                  <d17p1:ArgumentItem z:Id="i207">
                                     <d17p1:ArgumentName>BusinessException</d17p1:ArgumentName>
                                     <d17p1:Expression>BusinessException</d17p1:Expression>
                                     <d17p1:Type>PIX.Core.Exceptions.BusinessRuleException</d17p1:Type>
@@ -1778,12 +1943,12 @@
                             <Text>Ejecutar el script SetTransactionStatus</Text>
                             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                           </AbstractStep>
-                          <AbstractStep z:Id="i189" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i208" i:type="ExecutedStep">
                             <Childs />
                             <Id>2572f504-4e00-4323-bf77-6f2b9b03552e</Id>
-                            <Parent z:Ref="i176" />
+                            <Parent z:Ref="i195" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i190">
+                              <PropertyValue z:Id="i209">
                                 <PropertyName>GUID</PropertyName>
                                 <_dataType>Value</_dataType>
                                 <_expression i:nil="true" />
@@ -1802,7 +1967,7 @@
                           </AbstractStep>
                         </Childs>
                         <Id>a134993c-006e-4da2-9c7a-bc744d04dc8a</Id>
-                        <Parent z:Ref="i160" />
+                        <Parent z:Ref="i179" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
@@ -1814,9 +1979,9 @@
                       </AbstractStep>
                     </Childs>
                     <Id>c38ef646-2d77-47fe-ad01-1557e873f018</Id>
-                    <Parent z:Ref="i159" />
+                    <Parent z:Ref="i178" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i191">
+                      <PropertyValue z:Id="i210">
                         <PropertyName>Condition</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>ReferenceEquals(exception.GetType(),typeof(PIX.Core.Exceptions.BusinessRuleException))</_expression>
@@ -1837,7 +2002,7 @@
                 <Id>53940af1-9a23-4192-816f-6a03f145e45c</Id>
                 <Parent z:Ref="i127" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i192">
+                  <PropertyValue z:Id="i211">
                     <PropertyName>Exception</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>exception</_expression>
@@ -1866,7 +2031,7 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i193" i:type="CommentStep">
+          <AbstractStep z:Id="i212" i:type="CommentStep">
             <Childs />
             <Id>83c46e63-8de3-4b14-acfa-7109c201ed73</Id>
             <Parent z:Ref="i122" />
@@ -1887,27 +2052,27 @@
         <Text>PROCESO</Text>
         <_activityFullName>BR.Core.Base.Container</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i194" i:type="ExecutedStep">
+      <AbstractStep z:Id="i213" i:type="ExecutedStep">
         <Childs>
-          <AbstractStep z:Id="i195" i:type="CommentStep">
+          <AbstractStep z:Id="i214" i:type="CommentStep">
             <Childs />
             <Id>aaaa754c-0244-4839-9379-cbb4726e3452</Id>
-            <Parent z:Ref="i194" />
+            <Parent z:Ref="i213" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
             <IsCollapsed>false</IsCollapsed>
             <Text>INICIO DEL BLOQUE "FIN DEL TRABAJO"</Text>
           </AbstractStep>
-          <AbstractStep z:Id="i196" i:type="ExecutedStep">
+          <AbstractStep z:Id="i215" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i197" i:type="ExecutedStep">
+              <AbstractStep z:Id="i216" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i198" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i217" i:type="ExecutedStep">
                     <Childs />
                     <Id>fa025ab9-ce5e-4c1a-9c78-2743b7a55c54</Id>
-                    <Parent z:Ref="i197" />
+                    <Parent z:Ref="i216" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i199">
+                      <PropertyValue z:Id="i218">
                         <PropertyName>InSqlConnection</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>DB_Conn</_expression>
@@ -1924,12 +2089,12 @@
                     <Text>Cerrar la conexión a la base de datos</Text>
                     <_activityFullName>Activities.DataBaseSQL.RemoveConnection</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i200" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i219" i:type="ExecutedStep">
                     <Childs />
                     <Id>934d50a0-9f67-45eb-9098-7e43c3c80da2</Id>
-                    <Parent z:Ref="i197" />
+                    <Parent z:Ref="i216" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i201">
+                      <PropertyValue z:Id="i220">
                         <PropertyName>FilePath</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>@"Framework\CloseApplications.pix"</_expression>
@@ -1948,7 +2113,7 @@
                   </AbstractStep>
                 </Childs>
                 <Id>286ef046-0b16-441b-8dfa-9256eb58f494</Id>
-                <Parent z:Ref="i196" />
+                <Parent z:Ref="i215" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
@@ -1958,18 +2123,18 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Try</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i202" i:type="ExecutedStep">
+              <AbstractStep z:Id="i221" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i203" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i222" i:type="ExecutedStep">
                     <Childs>
-                      <AbstractStep z:Id="i204" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i223" i:type="ExecutedStep">
                         <Childs>
-                          <AbstractStep z:Id="i205" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i224" i:type="ExecutedStep">
                             <Childs />
                             <Id>56fe7243-ffdd-411d-af01-6ad4d08464e6</Id>
-                            <Parent z:Ref="i204" />
+                            <Parent z:Ref="i223" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i206">
+                              <PropertyValue z:Id="i225">
                                 <PropertyName>FilePath</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>@"Framework\KillApplications.pix"</_expression>
@@ -1988,7 +2153,7 @@
                           </AbstractStep>
                         </Childs>
                         <Id>2dc54dfd-19e6-4571-ba9d-2955fc344175</Id>
-                        <Parent z:Ref="i203" />
+                        <Parent z:Ref="i222" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
@@ -1998,10 +2163,10 @@
                         <Text></Text>
                         <_activityFullName>BR.Core.Base.Try</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i207" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i226" i:type="ExecutedStep">
                         <Childs />
                         <Id>e35241d8-3689-4870-90aa-9ba0785a8827</Id>
-                        <Parent z:Ref="i203" />
+                        <Parent z:Ref="i222" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
@@ -2011,10 +2176,10 @@
                         <Text></Text>
                         <_activityFullName>BR.Core.Base.Catch</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i208" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i227" i:type="ExecutedStep">
                         <Childs />
                         <Id>edd155bb-d5dd-4fde-84ae-5b894bafd73b</Id>
-                        <Parent z:Ref="i203" />
+                        <Parent z:Ref="i222" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
@@ -2026,7 +2191,7 @@
                       </AbstractStep>
                     </Childs>
                     <Id>b9d8e304-68c4-44e1-a1a2-e80361cbfb6a</Id>
-                    <Parent z:Ref="i202" />
+                    <Parent z:Ref="i221" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
@@ -2038,7 +2203,7 @@
                   </AbstractStep>
                 </Childs>
                 <Id>ea75bdd8-175e-41a9-a2b2-a9cce87454e2</Id>
-                <Parent z:Ref="i196" />
+                <Parent z:Ref="i215" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
@@ -2048,10 +2213,10 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Catch</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i209" i:type="ExecutedStep">
+              <AbstractStep z:Id="i228" i:type="ExecutedStep">
                 <Childs />
                 <Id>57650bd2-fcfc-489a-88c3-21bcd3917e80</Id>
-                <Parent z:Ref="i196" />
+                <Parent z:Ref="i215" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
@@ -2063,7 +2228,7 @@
               </AbstractStep>
             </Childs>
             <Id>232770bf-6561-46c1-837c-83a697602d35</Id>
-            <Parent z:Ref="i194" />
+            <Parent z:Ref="i213" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
@@ -2073,10 +2238,10 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i210" i:type="CommentStep">
+          <AbstractStep z:Id="i229" i:type="CommentStep">
             <Childs />
             <Id>64dc8bd8-4167-4f57-9284-27cbc79f3486</Id>
-            <Parent z:Ref="i194" />
+            <Parent z:Ref="i213" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
             <IsCollapsed>false</IsCollapsed>
@@ -2109,7 +2274,7 @@
   <Name>Main.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i211">
+    <Parameter z:Id="i230">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>QueueName</Name>
@@ -2125,7 +2290,7 @@
   </PlatformVersion>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
   <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params">
-    <d2p1:Variable z:Id="i212">
+    <d2p1:Variable z:Id="i231">
       <d2p1:DefaultValueExpression></d2p1:DefaultValueExpression>
       <d2p1:Description></d2p1:Description>
       <d2p1:Name>DB_Conn</d2p1:Name>

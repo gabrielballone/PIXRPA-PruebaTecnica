@@ -53,7 +53,11 @@
     </ProjectFileItem>
     <ProjectFileItem z:Id="i14">
       <IsMain>false</IsMain>
-      <Path>Framework\EXCEL\ExcelProducts.pix</Path>
+      <Path>Framework\EXCEL\ExcelResume.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i15">
+      <IsMain>false</IsMain>
+      <Path>Framework\WEB\FormUpload.pix</Path>
     </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
