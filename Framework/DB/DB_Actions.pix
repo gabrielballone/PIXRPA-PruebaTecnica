@@ -16,10 +16,32 @@
       </AbstractStep>
       <AbstractStep z:Id="i4" i:type="ExecutedStep">
         <Childs />
-        <Id>ec84ab92-b4e9-48e9-a0f0-caee9f0d69db</Id>
+        <Id>a4f49ed8-89b6-4e80-a343-4bc34456f6e3</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
           <PropertyValue z:Id="i5">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Inicio de consultas SQL para Resumen."</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Escriba el log "Inicio de consultas SQL para Resumen".</Text>
+        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i6" i:type="ExecutedStep">
+        <Childs />
+        <Id>ec84ab92-b4e9-48e9-a0f0-caee9f0d69db</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i7">
             <PropertyName>Result</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>result</_expression>
@@ -27,7 +49,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i6">
+          <PropertyValue z:Id="i8">
             <PropertyName>InSqlConnection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>DB_Conn</_expression>
@@ -35,7 +57,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i7">
+          <PropertyValue z:Id="i9">
             <PropertyName>SqlQuery</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"SELECT COUNT(*) AS ""Total productos"" FROM ""Productos"";"</_expression>
@@ -52,12 +74,12 @@
         <Text>Cantidad total de productos</Text>
         <_activityFullName>Activities.DataBaseSQL.SqlExecuteQuery</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i8" i:type="ExecutedStep">
+      <AbstractStep z:Id="i10" i:type="ExecutedStep">
         <Childs />
         <Id>1ce9a5ad-cfe5-4b7c-8f99-cd136e3563c5</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i9">
+          <PropertyValue z:Id="i11">
             <PropertyName>List</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>DataCalculations</_expression>
@@ -65,7 +87,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i10">
+          <PropertyValue z:Id="i12">
             <PropertyName>Object</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>result</_expression>
@@ -82,12 +104,12 @@
         <Text></Text>
         <_activityFullName>Activities.BaseCollections.List.Add</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i11" i:type="ExecutedStep">
+      <AbstractStep z:Id="i13" i:type="ExecutedStep">
         <Childs />
         <Id>0d0b2475-62fb-4fc4-8acc-821135b1fff6</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i12">
+          <PropertyValue z:Id="i14">
             <PropertyName>Result</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>result</_expression>
@@ -95,7 +117,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i13">
+          <PropertyValue z:Id="i15">
             <PropertyName>InSqlConnection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>DB_Conn</_expression>
@@ -103,7 +125,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i14">
+          <PropertyValue z:Id="i16">
             <PropertyName>SqlQuery</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"SELECT AVG(price) AS ""Precio promedio"" FROM ""Productos"";"</_expression>
@@ -111,7 +133,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i15">
+          <PropertyValue z:Id="i17">
             <PropertyName>Params</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
@@ -128,12 +150,12 @@
         <Text>Precio promedio general</Text>
         <_activityFullName>Activities.DataBaseSQL.SqlExecuteQuery</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i16" i:type="ExecutedStep">
+      <AbstractStep z:Id="i18" i:type="ExecutedStep">
         <Childs />
         <Id>08464a90-3911-48b5-a515-e2f428a96e3f</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i17">
+          <PropertyValue z:Id="i19">
             <PropertyName>List</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>DataCalculations</_expression>
@@ -141,7 +163,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i18">
+          <PropertyValue z:Id="i20">
             <PropertyName>Object</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>result</_expression>
@@ -158,12 +180,12 @@
         <Text></Text>
         <_activityFullName>Activities.BaseCollections.List.Add</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i19" i:type="ExecutedStep">
+      <AbstractStep z:Id="i21" i:type="ExecutedStep">
         <Childs />
         <Id>92b1e885-a71c-4606-bdb0-44c64285c7d1</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i20">
+          <PropertyValue z:Id="i22">
             <PropertyName>Result</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>result</_expression>
@@ -171,7 +193,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i21">
+          <PropertyValue z:Id="i23">
             <PropertyName>InSqlConnection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>DB_Conn</_expression>
@@ -179,7 +201,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i22">
+          <PropertyValue z:Id="i24">
             <PropertyName>SqlQuery</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"SELECT category, AVG(price) AS ""Precio promedio x cateogria"" FROM ""Productos"" GROUP BY category;"</_expression>
@@ -196,12 +218,12 @@
         <Text> Precio promedio por categoría</Text>
         <_activityFullName>Activities.DataBaseSQL.SqlExecuteQuery</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i23" i:type="ExecutedStep">
+      <AbstractStep z:Id="i25" i:type="ExecutedStep">
         <Childs />
         <Id>4d107020-bd6c-4fa7-8657-ef74978bfbac</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i24">
+          <PropertyValue z:Id="i26">
             <PropertyName>List</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>DataCalculations</_expression>
@@ -209,7 +231,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i25">
+          <PropertyValue z:Id="i27">
             <PropertyName>Object</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>result</_expression>
@@ -226,12 +248,12 @@
         <Text></Text>
         <_activityFullName>Activities.BaseCollections.List.Add</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i26" i:type="ExecutedStep">
+      <AbstractStep z:Id="i28" i:type="ExecutedStep">
         <Childs />
         <Id>12912dd5-9bac-4fc6-8033-885b61aee290</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i27">
+          <PropertyValue z:Id="i29">
             <PropertyName>Result</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>result</_expression>
@@ -239,7 +261,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i28">
+          <PropertyValue z:Id="i30">
             <PropertyName>InSqlConnection</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>DB_Conn</_expression>
@@ -247,7 +269,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i29">
+          <PropertyValue z:Id="i31">
             <PropertyName>SqlQuery</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"SELECT category, COUNT(*) AS ""Cantidad productos x cateogria"" FROM ""Productos"" GROUP BY category;"</_expression>
@@ -264,12 +286,12 @@
         <Text>Cantidad de productos por categoría</Text>
         <_activityFullName>Activities.DataBaseSQL.SqlExecuteQuery</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i30" i:type="ExecutedStep">
+      <AbstractStep z:Id="i32" i:type="ExecutedStep">
         <Childs />
         <Id>c019b292-2291-4c50-acda-c28525211bbe</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i31">
+          <PropertyValue z:Id="i33">
             <PropertyName>List</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>DataCalculations</_expression>
@@ -277,7 +299,7 @@
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i32">
+          <PropertyValue z:Id="i34">
             <PropertyName>Object</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>result</_expression>
@@ -294,6 +316,28 @@
         <Text></Text>
         <_activityFullName>Activities.BaseCollections.List.Add</_activityFullName>
       </AbstractStep>
+      <AbstractStep z:Id="i35" i:type="ExecutedStep">
+        <Childs />
+        <Id>0d323827-b16a-481e-b77b-28e64f34554b</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i36">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Fin de consultas SQL para Resumen."</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Escriba el log "Fin de consultas SQL para Resumen".</Text>
+        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+      </AbstractStep>
     </Childs>
     <Id>c3ca396a-9e5e-42bf-bdfd-f5a320e8782e</Id>
     <Parent i:nil="true" />
@@ -309,14 +353,14 @@
   <Name>DB_Actions.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i33">
+    <Parameter z:Id="i37">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>DB_Conn</Name>
       <RunnerType>None</RunnerType>
       <TypeString>Activities.DataBaseSQL.Core.DataBaseShareMethodConnection</TypeString>
     </Parameter>
-    <Parameter z:Id="i34">
+    <Parameter z:Id="i38">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>DataCalculations</Name>

@@ -213,32 +213,127 @@ ON CONFLICT (id) DO NOTHING;"</_expression>
                     <_activityFullName>Activities.DataBaseSQL.SqlExecuteNonQuery</_activityFullName>
                   </AbstractStep>
                   <AbstractStep z:Id="i29" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>021f0503-93e2-4597-ac46-9e00c4e39d12</Id>
+                    <Childs>
+                      <AbstractStep z:Id="i30" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i31" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>a2c4a035-bcaa-4fc4-b997-748333cc29d3</Id>
+                            <Parent z:Ref="i30" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i32">
+                                <PropertyName>Text</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>"Inserción correcta en DB."</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text>Escriba el log "Inserción correcta en DB".</Text>
+                            <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i33" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>021f0503-93e2-4597-ac46-9e00c4e39d12</Id>
+                            <Parent z:Ref="i30" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i34">
+                                <PropertyName>Row</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>TransactionItem</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i35">
+                                <PropertyName>BaseDataTable</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>ProductsTable</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                              <PropertyValue z:Id="i36">
+                                <PropertyName>AutoCreateColumns</PropertyName>
+                                <_dataType>Value</_dataType>
+                                <_expression i:nil="true" />
+                                <_screenShotBase64 i:nil="true" />
+                                <_value xmlns:d17p1="http://www.w3.org/2001/XMLSchema" i:type="d17p1:boolean">true</_value>
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text i:nil="true" />
+                            <_activityFullName>Activities.BaseCollections.DT.AddRow</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>1ec82711-5b92-4246-aaa6-e432c26e7e22</Id>
+                        <Parent z:Ref="i29" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i37" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i38" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>b9f78371-fd23-4d4e-bf14-78c3d80fa910</Id>
+                            <Parent z:Ref="i37" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i39">
+                                <PropertyName>Text</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>"Registro ya existe en DB. Sin cambios."</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text>Escriba el log "Registro ya existe en DB. Sin cambios".</Text>
+                            <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>e9805c9d-dcf9-4d0e-975a-ec02ce10cce4</Id>
+                        <Parent z:Ref="i29" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>b236b80e-968b-4c06-844b-971b8a82673a</Id>
                     <Parent z:Ref="i9" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i30">
-                        <PropertyName>Row</PropertyName>
+                      <PropertyValue z:Id="i40">
+                        <PropertyName>Condition</PropertyName>
                         <_dataType>Expression</_dataType>
-                        <_expression>TransactionItem</_expression>
+                        <_expression>newReg &gt; 0</_expression>
                         <_screenShotBase64 i:nil="true" />
                         <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i31">
-                        <PropertyName>BaseDataTable</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>ProductsTable</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i32">
-                        <PropertyName>AutoCreateColumns</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_screenShotBase64 i:nil="true" />
-                        <_value xmlns:d13p1="http://www.w3.org/2001/XMLSchema" i:type="d13p1:boolean">true</_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
                     </PropertyValues>
@@ -247,8 +342,8 @@ ON CONFLICT (id) DO NOTHING;"</_expression>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
-                    <Text i:nil="true" />
-                    <_activityFullName>Activities.BaseCollections.DT.AddRow</_activityFullName>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.If</_activityFullName>
                   </AbstractStep>
                 </Childs>
                 <Id>bddc8c72-63b3-4412-8ced-02610549450a</Id>
@@ -262,8 +357,31 @@ ON CONFLICT (id) DO NOTHING;"</_expression>
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Try</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i33" i:type="ExecutedStep">
-                <Childs />
+              <AbstractStep z:Id="i41" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i42" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>08e9b391-3f98-4b84-9dca-8c8e194bdb45</Id>
+                    <Parent z:Ref="i41" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i43">
+                        <PropertyName>Exception</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>new System.Exception("Error al ejecutar SQL.")</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId>1</SelectedOptionId>
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.ThrowException</_activityFullName>
+                  </AbstractStep>
+                </Childs>
                 <Id>455e3a4c-10eb-469f-a27b-a10c8804c486</Id>
                 <Parent z:Ref="i8" />
                 <PropertyValues />
@@ -275,7 +393,7 @@ ON CONFLICT (id) DO NOTHING;"</_expression>
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Catch</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i34" i:type="ExecutedStep">
+              <AbstractStep z:Id="i44" i:type="ExecutedStep">
                 <Childs />
                 <Id>966fad39-4f6a-47c2-922f-9adb4747c4e7</Id>
                 <Parent z:Ref="i8" />
@@ -312,12 +430,12 @@ ON CONFLICT (id) DO NOTHING;"</_expression>
         <Text>Inserción en DB</Text>
         <_activityFullName>BR.Core.Base.Container</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i35" i:type="ExecutedStep">
+      <AbstractStep z:Id="i45" i:type="ExecutedStep">
         <Childs />
         <Id>492c9e9f-2cb6-4cf7-9f91-605746a7a8d7</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i36">
+          <PropertyValue z:Id="i46">
             <PropertyName>Text</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>"Fin del tratamiento de datos para trabajar."</_expression>
@@ -349,28 +467,28 @@ ON CONFLICT (id) DO NOTHING;"</_expression>
   <Name>ProcessTransactionItem.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i37">
+    <Parameter z:Id="i47">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>TransactionItem</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i38">
+    <Parameter z:Id="i48">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>Config</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i39">
+    <Parameter z:Id="i49">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>DB_Conn</Name>
       <RunnerType>None</RunnerType>
       <TypeString>Activities.DataBaseSQL.Core.DataBaseShareMethodConnection</TypeString>
     </Parameter>
-    <Parameter z:Id="i40">
+    <Parameter z:Id="i50">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>ProductsTable</Name>
