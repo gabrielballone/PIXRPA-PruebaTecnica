@@ -39,8 +39,8 @@ Abrir archivo de proyecto *.pixproj*
 2. El archivo *Data/Config.xlsx* contiene las configuraciones básicas necesarias para el correcto funcionamiento:
 ![alt text](image.png)
 
-    > [!IMPORTANT]
-    > El bot fue creado para trabajar con el DBMS PostgreSQL. Ajustar valores según entorno de DB, User, Pass.
+> [!IMPORTANT]
+> El bot fue creado para trabajar con el DBMS PostgreSQL. Ajustar valores según entorno de DB, User, Pass.
 
 3. Ejecutar desde PIX Studio
 4. Resultados:
